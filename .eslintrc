@@ -1,0 +1,39 @@
+{
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "globals": {
+      "jquery": true,
+      "axios": true,
+      "_": true,
+      "template": true,
+      "Vue": true,
+      "underscore": true,
+      "moment": true,
+      "ES6Promise": true,
+      "VueRouter": true,
+      "expect": true,
+      "require": true,
+      "module": true
+    },
+    "rules": {
+      "quotes": 0,
+      "no-underscore-dangle": 0,
+      "no-unused-expressions": 0,
+      "curly": [2, "multi-line"],
+      "strict": 0,
+      "no-use-before-define": 0,
+      "eqeqeq": 0,
+      "new-cap": [2, {"capIsNew": false}],
+      "dot-notation": [2, {"allowKeywords": false}],
+      "no-console": 0,
+      "no-return-assign": 0,
+      "no-shadow": 0,
+      "comma-dangle": 0,
+      "camelcase": [2, {"properties": "never"}]
+    }
+  }
