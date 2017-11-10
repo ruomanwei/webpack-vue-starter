@@ -15,7 +15,7 @@ module.exports = merge(webpackBaseConfig, {
     //多入口文件配置
     entry: {
         main:"./source/main.js",
-        vendors: ['jquery','vue','axios']
+        vendors: ['vue','es6-promise','axios','jquery']
     },
     output: {
         path: path.resolve(__dirname,"../dist"),
@@ -24,20 +24,23 @@ module.exports = merge(webpackBaseConfig, {
         chunkFilename: "dist/chunk/[name].js" // 设置require.ensure 文件名
     },
     devtool: '#eval-source-map',
-    // devServer: {
-    //     // contentBase: "", //本地服务器所加载的页面所在的目录
-    //     historyApiFallback: true, //不跳转
-    //     inline: true,
-    //     hot: true
-    // },
+    devServer: {
+        // contentBase: path.join(__dirname, "../source"), //本地服务器所加载的页面所在的目录
+        historyApiFallback: true, 
+        open: true, //启动服务时是否打开网页
+        port:9000, //默认服务器端口号
+        compress: true //是否启用Gzip压缩
+
+        // --open --inline --hot --compress --history-api-fallback --port 8080
+    },
     plugins: [
+        new FriendlyErrorsPlugin(),
         new webpack.NamedModulesPlugin(),
         new webpack.optimize.CommonsChunkPlugin({ name: 'vendors', filename: 'vendor.bundle.js' }),
         new HtmlWebpackPlugin({
             inject: true,
             filename: path.join(__dirname, '../dist/index.html'),
-            template: path.join(__dirname, '../index.html')
-        }),
-        new FriendlyErrorsPlugin()
+            template: path.join(__dirname, '../source/index.html')
+        })
     ]
 });

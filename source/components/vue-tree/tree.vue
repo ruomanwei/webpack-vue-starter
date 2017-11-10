@@ -12,7 +12,7 @@
 export default {
     data(){
         return{
-            aa:"Hello worlds"
+            aa:"Hello world"
         }
     }
 };
