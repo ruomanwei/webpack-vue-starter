@@ -16,10 +16,10 @@ module.exports = merge(webpackBaseConfig,{
         chunkFilename: "dist/chunk/[name].js" // 设置require.ensure 文件名
     },
     externals: {
-        'jquery': "jQuery",
-        'Vue': "Vue",
+        'jquery': "jquery",
+        'vue': "vue",
         'axios': "axios",
-        'ES6Promise': "ES6Promise",
+        'es6-promise': "es6-promise",
     }
 });
 

@@ -9,7 +9,7 @@ module.exports = {
                 loader: 'babel-loader',
                 test: /\.js$/,
                 include: [
-                    path.resolve(__dirname, 'source')
+                    path.resolve(__dirname, '../source')
                 ],
                 exclude: [
                     /(node_modules|bower_components)/
