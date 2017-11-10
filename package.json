@@ -1,5 +1,5 @@
 {
-  "name": "es6-vue-cli",
+  "name": "es6-vue-starter",
   "version": "1.0.0",
   "description": "一款基于webpack 和 vue 简单的脚手架，方便快速开发，支持es2015",
   "main": "dist/vue-tree/main.js",
