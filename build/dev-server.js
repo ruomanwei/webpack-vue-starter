@@ -15,7 +15,7 @@ module.exports = merge(webpackBaseConfig, {
     //多入口文件配置
     entry: {
         main:"./source/main.js",
-        vendors: ['vue','es6-promise','axios','jquery']
+        vendors: ['vue','vue-router','es6-promise','axios','jquery']
     },
     output: {
         path: path.resolve(__dirname,"../dist"),

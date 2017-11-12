@@ -2,7 +2,7 @@
   "name": "webpack-vue-starter",
   "version": "1.0.0",
   "description": "一款基于webpack 和 vue 简单的脚手架，方便快速开发，支持es2015",
-  "repostory":"https://github.com/DanielChan27/webpack-vue-starter.git",
+  "repostory": "https://github.com/DanielChan27/webpack-vue-starter.git",
   "main": "dist/vue-tree/main.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --config build/dev-server.js",
@@ -17,7 +17,8 @@
     "core-js": "^2.5.1",
     "es6-promise": "~4.1.1",
     "jquery": "~1.9.0",
-    "vue": "~2.2.1"
+    "vue": "~2.2.1",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "babel": "~6.23.0",
